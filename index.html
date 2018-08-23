@@ -10,6 +10,65 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./src/theme.css" type="text/css">
   <script src="./src/custom.js" type="text/javascript"></script>
+
+  <script>
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 200000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = false;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 5000;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = "span { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
 </head>
 
 <body>
@@ -40,7 +99,7 @@
   <div class="col-md-1"></div>
   <div class="col-md-10" id="description">
   <center>
-    <p><h2>Who am I ?<sub><img src="pics/pic1.png" alt="..." style="width:2%;height:2%;position: relative;"></sub></h2><p>Myself Binay Kumar Pradhan. I'm in my final-year of Bachelor's programme at IIIT Bhubaneswar. My undergrade life (Mostly academics/projets stuff) could be found <a href="https://github.com/VinayIN">here @GITHUB.</a></p></p>
+    <p><h2>Who am I ?<sub><img src="pics/pic1.png" alt="..." style="width:2%;height:2%;position: relative;"></sub></h2><p><font class="typewrite" data-period="3000" data-type='[ "Machine Learner| Deep Learner| C++ & Python Programmer"]'></font><br>I'm in my final-year of Bachelor's programme at IIIT Bhubaneswar. My undergrade life (Mostly academics/projects stuff) can be found here <a href="https://github.com/VinayIN">@GITHUB.</a></p></p>
   </center>
   </div>
   <div class="col-md-1"></div>
@@ -51,11 +110,14 @@
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <div class="well">
-        <p style="text-indent: 5%;">I'm originally from a remote village in the state of Jharkhand, India and currently residing in Bhubaneswar, India. I am an Undergrad majoring in IT under CS department from <a href="https://www.iiit-bh.ac.in" target="_blank">IIIT Bhubaneswar</a>. Apart from what is expected out of a normal CS student when I get myself free I like to travel a lot, play sports preferrably outdoor, watch movies and do theatre. I like keeping myself fit. If you meet me feel free to converse about fitness, movies, adventures and of course, coding.</p>
-        <br>
         <p style="text-indent: 5%;">
-        I enjoy participating in <font>Hackathons</font>, <font>programming</font> and exploring <font>the state of AI</font> in deep learning, natural language processing and computer vision. I've spent my recent summer as a research intern at <a href="http://idrbt.ac.in/" target="_blank">IDRBT Hyderabad</a>.
-        </p>
+          I'm originally from a remote village in the state of Jharkhand, India and currently residing in Bhubaneswar, India. I am an undergrad majoring in IT under CS department from <a href="https://www.iiit-bh.ac.in" target="_blank">IIIT Bhubaneswar</a> and will be graduating in 2019.</p>
+          <br>
+          <p style="text-indent: 5%;">
+          I enjoy participating in <font>Hackathons</font>, <font>programming</font> and exploring <font>the state of AI</font> in deep learning, natural language processing and computer vision. I've spent my recent summer as a research intern at <a href="http://idrbt.ac.in/" target="_blank">IDRBT, Hyderabad</a>.</p>
+          <br>
+          <p style="text-indent: 5%;">
+           In my spare time I like to travel a lot, play sports preferably outdoor, watch movies and do theatre. I like keeping myself fit. If you meet me feel free to converse about fitness, movies, adventures and of course, coding.</p>
         </div>
       </div>
       <div class="col-md-2"></div>
@@ -75,7 +137,7 @@
                   </li>
                   <hr>
                   <li>
-                    Check my <a href="blog" target="_blank">BLOG.
+                    I have a <a href="blog" target="_blank">BLOG,</a> where I write few things related to Deep Learning.
                   </li>
                 </ul>
         </div>
@@ -86,8 +148,8 @@
   <section id="footer">
     <div class="container">
       <div class="container row">
-        <div class="col-md-6"></div>
-        <div class="col-md-6">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
         </div>
       </div>
       <div class="row container-fluid">
