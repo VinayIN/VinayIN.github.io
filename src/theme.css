@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Amaranth');
+@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911');
+
+body{
+	background-color: rgb(255,255,255);
+	font-size: 18px;
+	font-family: 'Amaranth';
+	color: rgb(91,91,91);
+}
+
+p h2 {
+	color: rgb(41,41,41);
+}
+p font {
+	color: rgb(80,174,85);
+}
+
+a:hover {
+	color: rgb(138,23,26);
+}
+a {
+	color:rgb(95,95,95);
+	text-decoration: underline;
+	text-decoration-color: rgb(41,41,41); 
+}
+
+li {
+	color:(41,41,41);
+	font-size: 16px;
+	font-family: 'Goudy Bookletter 1911', serif;
+}
+.header {
+	font-size: 20px;
+}
+
+.connect {
+ margin-top: 50px;
+
+}
+
+.header font:hover {
+	color: rgb(80,174,85);
+}
+
+.header font {
+	font-size: 22px;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin:auto;
+	border:1px solid black;
+	border-radius: 5px;
+	border-color: rgb(157,157,157);
+}
+
+.header font + .tooltip > .tooltip-inner {
+	background-color: rgb(217,235,207);
+	color:rgb(91,91,91);
+}
+
+#github:hover, #mail:hover, #facebook:hover, #skype:hover, #linkedIn:hover, #about:hover {
+	height: 10%;
+	width: 10%;
+	transform: scale(1.5);
+	/*padding-left: 2%;*/
+
+}
+#github, #mail, #facebook, #skype, #linkedIn, #about {
+	height: 10%;
+	width: 10%;
+	/*padding-left: 2%;*/
+
+}
+
+.content {
+margin-top:2%;
+
+}
+
+
+#link {
+	height: 5%;
+	width: 5%;
+	border-radius: 25%;
+
+}
+
+.well {
+	margin-top: 5%;
+	font-family: 'Yanone Kaffeesatz';
+	font-size: 18px;
+	word-spacing: 1px;
+	letter-spacing: 0.5px;
+}
+
+#footer{
+	bottom: 0; 
+	background-color: rgb(244,244,244);
+	font-size: 20px;
+}
+
+#description{
+	font-family: 'Yanone Kaffeesatz';
+	font-size: 20px;
+	word-spacing: 1px;
+	letter-spacing: 0.5px;
+}
+
+#licence img{
+	padding-left: 0.5%;
+	height: 2%;
+	width: 2%;
+}
+
+/* custom font style for contents */
+#my_content {
+	font-size: 20px;
+	font-family: 'Goudy Bookletter 1911', serif;
+}
