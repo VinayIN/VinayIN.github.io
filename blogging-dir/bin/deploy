@@ -20,12 +20,12 @@ bundle exec jekyll build
 
 # Delete and move files.
 #find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
+rm -rf .jekyll-cache/
+rm deploy
+rm setup
 cp -rf _site/* ../blog/
 rm -R _site/
-rm setup
-rm deploy
-rm ../blog/setup
-rm ../blog/deploy
+
 
 # Push to gh-pages.
 git add -fA
