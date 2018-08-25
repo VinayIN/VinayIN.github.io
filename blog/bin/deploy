@@ -20,14 +20,14 @@ bundle exec jekyll build
 
 # Delete and move files.
 find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
-if [ `ls ../ | grep blogspot` ]
+if [ `ls ../ | grep blogpost` ]
 then
-	rm -Rf ../blogspot/
-	mkdir ../blogspot
+	rm -Rf ../blogpost/
+	mkdir ../blogpost
 else
-	mkdir ../blogspot
+	mkdir ../blogpost
 fi
-mv _site/* ../blogspot/.
+mv _site/* ../blogpost/.
 rm -R _site/
 
 # Push to gh-pages.
