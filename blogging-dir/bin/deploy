@@ -19,9 +19,8 @@ yarn install --modules-folder ./_assets/yarn
 bundle exec jekyll build
 
 # Delete and move files.
-#find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
-rm -R .jekyll-cache/
-cp -R _site/* ../blog/
+find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
+mv -R _site/* ../blog/
 rm -R _site/
 
 # Push to gh-pages.
