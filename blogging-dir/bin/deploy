@@ -20,6 +20,8 @@ bundle exec jekyll build
 
 # Delete and move files.
 #find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
+rm -R ../blog/
+mkdir ../blog
 mv _site/* ../blog/.
 rm -R _site/
 
