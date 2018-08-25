@@ -137,7 +137,7 @@
               <span class="article-list-minutes">
                 
                 
-                  3 minute read
+                  1 minute read
                 
               </span>
               <span class="article-list-divider">-</span>
@@ -152,50 +152,7 @@
           </header>
 
           <div class="article-content">
-            <p>The history of Neural network starts from 1943, when neurophysiologist Warren McCulloch and mathematician Walter Pitts wrote a <a href="https://doi.org/10.1007/BF02478259">paper</a> on how neurons might work being inspired with the biological neuron unit. Rest we might have heared about Hebb network, Perceptron, Adaline &amp; Madaline, Kohonen self-organizing map… etc and the list continues. Their approaches to using neural network with variations led to solving categories of problems.</p>
-
-<p><em>Artificial Neural Network</em> has been a computation tool used by many in the domain of  Machine Learning where their is involvement of complex features and somehow at end, It all follows to <em>Deep Learning</em> problem set. <strong>Ian Goodfellow</strong>, <strong>Yoshua Bengio</strong> and <strong>Aaron Courville</strong> in their book <a href="https://www.deeplearningbook.org">Deep Learning</a> put forward their view of the AI contrast to the early days, where it was viewed to rapidly tackle and solve problems that are intellectually difficult for human beings but relatively straight- forward for computers. Today, the challenge is to solve the tasks that are easy for people to perform but hard for people to describe formally—problems that we solve intuitively, that feel automatic, like recognizing spoken words or faces in images.</p>
-
-<p>To understand how neural nets use the feature set to adjust the parameter, tune hyperparameters, and come at decision for the input signals assume a situation very commonly analysed in <em>Deep Learning</em> <strong>“Boston house pricing”</strong>, Where one has to predict the price of the house depending on various features given as problem set.</p>
-
-<p>If its done without neural net, the code for predicting the price follows as such:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_boston</span>
-    <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegresion</span>
-    <span class="n">boston</span><span class="o">=</span><span class="n">load_boston</span><span class="p">()</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">boston</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-    <span class="c">#split the dataset</span>
-    <span class="n">X</span><span class="o">=</span><span class="n">boston</span><span class="p">[</span><span class="s">"data"</span><span class="p">]</span>
-    <span class="n">Y</span><span class="o">=</span><span class="n">boston</span><span class="p">[</span><span class="s">"target"</span><span class="p">]</span>
-    <span class="n">train</span><span class="o">=</span><span class="n">X</span><span class="p">[:</span><span class="mi">500</span><span class="p">][:]</span>
-    <span class="n">train_labels</span><span class="o">=</span><span class="n">Y</span><span class="p">[:</span><span class="mi">500</span><span class="p">]</span>
-    <span class="n">test</span><span class="o">=</span><span class="n">X</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">:][:]</span>
-    <span class="n">test_labels</span><span class="o">=</span><span class="n">Y</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">:]</span>
-
-	<span class="c">#fit and train the linear regression model</span>
-    <span class="n">reg</span><span class="o">=</span><span class="n">LinearRegression</span><span class="p">(</span><span class="n">fit_intercept</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="n">reg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train</span><span class="p">,</span><span class="n">train_labels</span><span class="p">)</span>
-    <span class="n">pred</span><span class="o">=</span><span class="n">reg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
-
-	<span class="c">#find the score</span>
-    <span class="n">reg</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">test</span><span class="p">,</span><span class="n">test_labels</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>Without using neural net a simple linear regression model stated above doesn’t gives a satisfactory $R^2$ Score, Unless its hyperparameters are set according to the dataset. If the same situation is build upon a simple architecture of Linear regression neural network model.  An appreciable improvement and even a possibility for good $\displaystyle R^2 \approx 0$ is expected and this is totally taken care by neural nets if proper architecture is laid out.</p>
-
-<h2 id="then-what-the-heck-does-neural-nets-do">Then what the heck does neural nets do?</h2>
-<p>Considering the architecture of network, If a signal is able to trigger a threshold value ‘<em>$\theta$</em>’ then it propagates to next next layer of the network till output is generated. Here is a simple sketch introducing the idea that are considered when neural networks are used for any applications.</p>
-<center><iframe width="50%" height="312" src="https://www.youtube.com/embed/w9OFiOaTFs8" frameborder="0" allowfullscreen=""></iframe></center>
-
-<p>The model of ANN are specified by the three basic entities namely:</p>
-<ol>
-  <li>the model’s synaptic interconnections;</li>
-  <li>the training or learning rules adopted for updating and adjusting the connection weights;</li>
-  <li>their activation functions.</li>
-</ol>
-
-<p>Using multiple neural layers to represent the complex hierarchy of concepts so as to learn comlicated concepts by building them on simplier concepts is the characteristerization of deep learning. The quintessential example of a deep learning model is the feedforward deep network or multilayer perceptron (MLP), And it starts with a general equation: <strong>$Y=\sum_i^n (W_i * X_i) + b$</strong>. Adjusting <strong>weights</strong>, <strong>hyperparameters</strong> and <strong>optimization</strong> are the spices that adds flavour to the recipe on the network. These neural networks acts as a magical computational tools for complex feature sets depending on the weight values acheived after no. of <em>epochs</em>.</p>
-
-<p>So this is what the neural networks basically does. There are many works of other researches that explains the mathematical view of neural networks. These are a set of concepts that has been a fascinating area for every AI researcher due to its usuability in intutitive problems. Feel free to reach me in case you find out more about the “<strong>nets</strong>”, untill then keep exploring.</p>
+            
 
           </div>
           <div class="article-share">
