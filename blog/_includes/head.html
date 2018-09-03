@@ -16,6 +16,10 @@
   <meta name="twitter:title" content="{{ page.title | escape }}">
   <meta name="twitter:description" content="{{ page.description }}">
 
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
   {% if page.thumb_image %}
     {% if page.thumb_image contains '://' %}
       <meta property="og:image" content="{{ page.thumb_image }}">
