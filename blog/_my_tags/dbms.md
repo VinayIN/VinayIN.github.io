@@ -1,4 +1,0 @@
----
-slug: dbms
-name: DBMS
----
