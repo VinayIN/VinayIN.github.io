@@ -30,16 +30,16 @@ $base-border-color: $gray-lightest;
 // Page specific colors
 
 $body-background: $white;
-$header-logo-color: $black;
-$header-link-color: $gray-darker;
-$header-link-color-hover: $gray-darkest;
+$header-logo-color: #00804d;
+$header-link-color: #808080;
+$header-link-color-hover: #ff6633;
 $article-header-title-color: $gray-darkest;
 $article-header-description-color: $gray-dark;
 $article-post-titles-color: $gray-darkest;
 $article-footer-color: $gray-light;
 $article-footer-link-color: $gray-dark;
-$article-footer-link-color-hover: $gray-darkest;
-$article-paginator-color-hover: $gray-darkest;
+$article-footer-link-color-hover: #ff6633;
+$article-paginator-color-hover: #ff6633;
 
 // Imports
 // =============================================================================

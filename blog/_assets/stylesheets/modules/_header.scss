@@ -15,6 +15,13 @@
   font-weight: 700;
   color: $header-logo-color;
   text-decoration: none;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  margin:auto;
+  border:1px solid black;
+  border-radius: 5px;
+  border-color: $gray-lightest;
 }
 
 .header-links {
