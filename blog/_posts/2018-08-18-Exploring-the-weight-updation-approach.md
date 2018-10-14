@@ -7,44 +7,59 @@ use_math: true
 ---
 ## Exploring the Weight Updating approach
 
-Neural Networks are function approximators that have achieved state-of-the-art accuracy in numerous machine learning tasks. Their great success in terms of accuracy is all about training the `net` with many samples (i.e- Updating the weight parameters) for every different tasks where its intended to be used.
+Neural Networks are function approximators that have achieved state-of-the-art accuracy in numerous machine learning tasks. Their great success in terms of accuracy is all about training the `net` with many samples (i.e- Updating the weight parameters) for every different tasks where its intended to be used. Conventionally, It is stated that $$W_{ij}$$= weight connection from `neuron j` to `neuron i`.
 
 ### Asking the next question, Where did it all start?
 The answer says "Updating weight according to architecture". The world of AI is known by supervised learning, unsupervised learning and reinforcement learning. They employ different learning rules for their weight updation and with varying situation they modify these rule so as to get better results. However their approach mainly starts with these rules:
- - Hebbian learning rule
+
+ - **Hebbian learning rule**<br/>
+ Classical Hebb rule indicates "neurons that fire together, wire together".
  \begin{equation}
- \Delta W
+ \Delta W = x * Y
  \end{equation}
 
- - Perceptron learning rule
+ - **Perceptron learning rule**<br/>
+ update when $$y \neq Y$$
  \begin{equation}
- \Delta W
+ \Delta W = \alpha * Y * x
  \end{equation}
 
- - Delta learning rule
+ - **Delta learning rule**<br/>
+ calculate error $$\delta = Y - y$$
  \begin{equation}
- \Delta W
+ \Delta W = \alpha * \delta * x
  \end{equation}
 
- - Backpropagation learning rule
+ - **Backpropagation learning rule**<br/>
+It is also a Generalised Delta Rule, where error is backpropagated from output layer to hidden layer and weight is updated in backward pass.
  \begin{equation}
- \Delta W
+ \Delta W_{ij} = - \eta \frac {\partial E}{\partial w_{ij}}
  \end{equation}
+<u>Simplified representation in MLP</u>,<br/>
+$$input_{k} \longrightarrow hidden_{j} \longrightarrow output_{i}$$<br/>
+*for output layer*, weights connected to output neuron i<br/>
+	$$\frac {\partial E}{\partial w_{ij}} = \delta_{o_i} * out_{h_i}$$<br/>
+	$$\delta_{o_i} = (target_{o_i} - out_{o_i}) * out_{o_i}(1-out_{o_i})$$<br/>
+*for hidden layer*, weights connected to hidden neuron j<br/>
+	$$\frac {\partial E}{\partial w_{jk}} = \delta_{h_j} * input_{k}$$<br/>
+	$$\delta_{h_j} = (\sum \delta_{o_i} * w_{h_{j}o_{i}}) * out_{h_j}(1-out_{h_j})$$<br/>
+Refer to this [solved numerical exmaple](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/) for a better grasp.
 
- - Stochastic learning rule
+ - **Stochastic learning rule**
+ This learning is employed in Boltzmann Machine, Cauchy Machine and Hopfield Nets Machine. Stochastic is the random variation included in the network. A popular varation of such learning is Stochatic Gradient Descent (SGD) Rule. A simplified [explanation to Gradient Descent optimization algorithm](https://machinelearning-blog.com/2018/02/28/gradient-descent/#more-435) and It is different from Batch (Vanilla) Gradient Descent. [Read It here](https://towardsdatascience.com/difference-between-batch-gradient-descent-and-stochastic-gradient-descent-1187f1291aa1). 
  \begin{equation}
- \Delta W
+ \text {Error/Cost function }\theta(parameter = weights) = \frac {1}{samples} \sum^{samples} (Y - y)^2
  \end{equation}
+ This learning rule is to minimise $$\theta$$.<br/>
+ i.e $$\frac {\partial \theta}{\partial \theta_{\text {(each sample)}}}$$
 
- - Competitive learning rule
+ - **Competitive learning rule**
+ This learning approach is refered as "winner-takes-all". Here during training, the output unit "i" that provides the highest activation to a given input pattern is declared the "weights of the winner" and is moved closer to the input pattern, whereas the rest of the neurons are left unchanged"
  \begin{equation}
- \Delta W
+ \Delta W_{i} = \eta * x_{(pattern)}
  \end{equation}
+ Instar learning rule and Outstar learning rule governs the dynamics of feedback connection weights in a standard competitive neural network in an unsupervised manner. Such learning rules are a part of Kohonen neural Network.
 
- - Out star learning rule
- \begin{equation}
- \Delta W
- \end{equation}
 
 `Reinforcement Learning` is a learning to act in order to maximise the future reward. This field has evolved a lot since the use of deep learning.
 <div class="embed-responsive embed-responsive-16by9">
