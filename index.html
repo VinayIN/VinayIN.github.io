@@ -1,164 +1,136 @@
-<!Doctype html>
-<head>
-  <meta name="Description" content="Binay Pradhan, info website ">
-  <meta name="Keyword" content="binay resume,binay IIIT,binay CV,IIIT student CV, student">
-  <meta name="author" content="Binay Pradhan">
-  <title>||| Binay Pradhan</title>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="./src/theme.css" type="text/css">
+<!DOCTYPE html>
+<html lang="en">
+<a>
+	<title>||| Binay Pradhan</title>
+	<meta charset="utf-8">
+	<meta name="Keyword" content="
+									binay pradhan resume,
+									binay pradhan IIIT,
+									binay pradhan CV,
+									IIIT student CV, 
+									binay pradhan developer,
+									binay pradhan machine learning developer,
+									binay pradhan adventurer,
+									binay pradhan researcher
+									">
+	<meta name="author" content="Binay Pradhan">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./src/theme.css" type="text/css">
   <script src="./src/custom.js" type="text/javascript"></script>
-
-  <script>
-    var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 200000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = false;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 5000;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = "span { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-</script>
+  <link 
 </head>
-
 <body>
+	<div class="jumbotron" style="background: none;">
+		<div class="container-fluid">
+			<div class="row connect">
+				<div class="col-md-12 text-left">
+						<span data-toggle="tooltip" data-placement="bottom">Binay Kumar Pradhan</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-right">
+						<a href="https://www.linkedin.com/in/i-binay" target="_blank">
+							<i class="fab fa-linkedin" id="linkedIn"></i>
+						</a>
+						<a href="https://www.github.com/VinayIN" target="_blank">
+							<i class="fab fa-github-square" id="github"></i>
+						</a>
+						<a href="mailto:pradhan.binay@outlook.com?cc=b415019%40iiit-bh.ac.in">
+							<i class="fas fa-envelope" id="mail"></i>
+						</a>
+						<a href="https://www.instagram.com/i_binay/" target="_blank">
+							<i class="fab fa-instagram" id="instagram"></i>
+						</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<div class="container connect">
-  <div class="container row header">
-  <div class="col-md-1"></div>
-  <div class="col-md-4 text-left"><font data-toggle="tooltip" data-placement="bottom">Binay Kumar Pradhan</font>
+	<div class="row container-fluid">
+		<div class="col-md-1"></div>
+		<div class="col-md-10 text-center" id="description">
+			<hr>
+			<p>
+				<h2>Who am I ?
+					<sub>
+						<img src="pics/pic1.png" alt="..." style="width:2%;height:2%;position: relative;">
+					</sub>
+				</h2>
+				<p>
+          <font class="typewrite" data-period="3000" data-type='["Machine Learner| Deep Learner| C++ & Python Programmer| Blogger| Adventurer"]'>
+          </font><br>
+          Namaste, I'm a Trainee-Data Science at <a href="https://www.utopiainc.com">Utopia</a> developing an textual information extraction product.
+          I prefer using python for most of my work.<br>
+					My academics/personal project stuffs can be found here
+          <a href="https://github.com/VinayIN">@GITHUB.</a>
+          If you want to collaborate on your project feel free to <a href="mailto:pradhan.binay@outlook.com?cc=b415019%40iiit-bh.ac.in">ping</a> me anytime.
+				</p>
+			</p>
+			<hr>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="card">
+					<div class="card-body">
+						<p style="text-indent: 5%;">
+							I'm originally from a remote village in the state of Jharkhand, India and currently residing in Bangalore, India.
+							I completed my undergraduation in '19 from <a href="https://www.iiit-bh.ac.in" target="_blank">IIIT Bhubaneswar</a> majoring in IT under CS department.
+              Now, I work as a Trainee - Data Science at <a href="https://www.linkedin.com/company/utopia-inc/" target="_blank">
+              Utopia Labs, Bangalore</a> developing few data cleansing products and maintaining them for the team.
+						</p>
+						<br>
+						<p style="text-indent: 5%;">
+							I enjoy participating in <font>Hackathons</font>, <font>programming</font> and exploring <font>the state of AI</font> in deep learning, natural language processing and computer vision.
+							I've spent '18 summer as a research intern at <a href="https://www.linkedin.com/school/idrbt-hyd/" target="_blank">IDRBT, Hyderabad</a>.
+              After which I did an internship with <a href="https://www.linkedin.com/company/utopia-inc/" target="_blank">
+              Utopia Labs, Bangalore</a> for my spring term before being a full time employee.
+						</p>
+						<br>
+						<p style="text-indent: 5%;">
+							In my spare time I like to travel a lot, play sports preferably outdoor, watch movies and do theatre. I like keeping myself fit.
+							If you meet me feel free to converse about fitness, movies, adventures and of course, coding.</p>
+						</div class="card-body" >
+					</div>
+				</div>
+			</div>			
+			<div class="col-md-2"></div>
+		</div>
+	</div>
 
-  </div>
-  <div class="col-md-4"></div>
-  <div class="col-md-2 text-right" >
-    <span>
-        <a href="https://www.linkedin.com/in/i-binay" target="_blank"><img id="linkedIn" src="pics/linkedIn.png" alt="linkedIn"></img></a>
-        <a href="https://www.github.com/VinayIN" target="_blank"><img id="github" src="pics/github.png" alt="github"></img></a>
-        <a href="mailto:pradhan.binay@outlook.com?cc=b415019%40iiit-bh.ac.in"><img id="mail" src="pics/mail.png" alt="mail"></img></a>
-        <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-        <!--<img id="skype" src="pics/skype.png"></img> -->
-        <a href="https://www.facebook.com/binay.pradhan.1996" target="_blank"><img id="facebook" src="pics/fb.png" alt="facebook"></img></a>
-      </span>
-  </div>
-  <div class="col-md-1"></div>    
-</div>
-
-<br>
-<br>
-  <div class="row container-fluid">
-  <br>
-  <div class="col-md-1"></div>
-  <div class="col-md-10" id="description">
-  <center>
-    <p><h2>Who am I ?<sub><img src="pics/pic1.png" alt="..." style="width:2%;height:2%;position: relative;"></sub></h2><p><font class="typewrite" data-period="3000" data-type='[ "Machine Learner| Deep Learner| C++ & Python Programmer"]'></font><br>I'm in my final-year of Bachelor's programme at IIIT Bhubaneswar. My undergraduate life (Mostly academics/project stuffs) can be found here <a href="https://github.com/VinayIN">@GITHUB.</a></p></p>
-  </center>
-  </div>
-  <div class="col-md-1"></div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <div class="well">
-        <p style="text-indent: 5%;">
-          I'm originally from a remote village in the state of Jharkhand, India and currently residing in Bangalore, India.
-          I completed my undergraduation in '19 from <a href="https://www.iiit-bh.ac.in" target="_blank">IIIT Bhubaneswar</a> majoring in IT under CS department.
-          Now I work as a Trainee - Data Science at <a href="https://www.linkedin.com/company/utopia-inc/" target="_blank">Utopia Labs, Bangalore</a> developing few data cleansing products.
-        </p>
-          <br>
-          <p style="text-indent: 5%;">
-          I enjoy participating in <font>Hackathons</font>, <font>programming</font> and exploring <font>the state of AI</font> in deep learning, natural language processing and computer vision.
-          I've spent '18 summer as a research intern at <a href="http://idrbt.ac.in/" target="_blank">IDRBT, Hyderabad</a>.
-          After which I did an internship with <a href="https://www.linkedin.com/company/utopia-inc/" target="_blank">Utopia Labs, Bangalore</a> for my spring term before being a full time employee.
-        </p>
-          <br>
-          <p style="text-indent: 5%;">
-           In my spare time I like to travel a lot, play sports preferably outdoor, watch movies and do theatre. I like keeping myself fit.
-           If you meet me feel free to converse about fitness, movies, adventures and of course, coding.</p>
-        </div>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-  </div>
-
-  <div class="row container-fluid content">
-      <div class="col-md-2"></div>
-      <div class="col-md-8" id="my_content">
-                <p><img id="link" src="pics/link.png"></img></p>
-                <ul> 
-                  <li>
-                    My full <a href="files/CV.pdf" target="_blank">CV</a>. Along with an <a href="code.html" target="_blank">interactive CV</a>.
-                  </li>
-                  <li>
-                    Presentation <a href="slides.html" target="_blank">slides</a> from few of my works.
-                  </li>
-                  <hr>
-                  <li>
-                    I have a <a href="blogpost/" target="_blank">BLOG,</a> where I put out few of my thoughts.
-                  </li>
-                </ul>
-        </div>
-      <div class="col-md-2"></div>
-  </div>
-</div>
-<div class="container-fluid" id="footer">
-    <div class="row container-fluid">
-        <div class="col-sm-12 text-center" id="licence" style="opacity: 0.5"> &copy; Some Rights Reserved. Proud supporter of open-source community.
-        <p class="text-right"> Licenced as:<a href="http://creativecommons.org/licenses/by/4.0/" target="_blank;"><img src="pics/1.png"></img><img src="pics/2.png"></img></a></p>
-        </div>
-    </div>
-</div>
-
+	<div class="row container-fluid content">
+		<div class="col-md-2"></div>
+		<div class="col-md-8" id="my_content">
+				  <p><img id="link" src="pics/link.png"></img></p>
+				  <ul> 
+					<li>
+            My full <a href="files/CV.pdf" target="_blank">CV <i class="far fa-link" aria-hidden="true"></i></a>
+            . Along with an <a href="code.html" target="_blank">interactive CV</a>.
+					</li>
+					<li>
+					  Presentation <a href="slides.html" target="_blank">slides</a> from few of my works.
+					</li>
+					<hr>
+					<li>
+            I have a <a href="blogpost/" target="_blank">BLOG,</a> where I put out few of my thoughts.
+            <font>(last updated: 18th Aug, 2018)</font>
+					</li>
+				  </ul>
+		  </div>
+		<div class="col-md-2"></div>
+	</div>
+	
+	<div class="footer text-center" id="licence" style="opacity: 0.5">
+		<p>&copy; Some Rights Reserved. Proud supporter of open-source community.</p>
+		<p>Licenced as:<a href="http://creativecommons.org/licenses/by/4.0/" target="_blank;"><img src="pics/1.png"></img><img src="pics/2.png"></img></a></p>
+	</div>
 </body>
 </html>

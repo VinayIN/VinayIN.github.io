@@ -9,10 +9,14 @@ body{
 	color: rgb(91,91,91);
 }
 
+.jumbotron{
+	padding-top: 0px;
+}
+
 p h2 {
 	color: rgb(41,41,41);
 }
-p font {
+font {
 	color: rgb(80,174,85);
 }
 
@@ -20,9 +24,8 @@ a:hover {
 	color: rgb(138,23,26);
 }
 a {
-	color:rgb(95,95,95);
-	text-decoration: underline;
-	text-decoration-color: rgb(41,41,41); 
+	color:rgb(181,181,168);
+	text-decoration-color: rgb(138,23,26); 
 }
 
 li {
@@ -32,10 +35,10 @@ li {
 }
 
 
-#footer {
-	padding-top: 2%;
+.footer {
+	padding-top: 5%;
 	font-size: 10px;
-	height: 80px;
+	height: 100%;
 	background-color: rgb(244,244,244);
 	font-family: 'Goudy Bookletter 1911', serif;
 }
@@ -49,11 +52,11 @@ li {
  font-family: 'Kaushan Script',cursive;
 }
 
-.header font:hover {
+.jumbotron .container-fluid .row span:hover {
 	color: rgb(80,174,85);
 }
 
-.header font {
+.jumbotron .container-fluid .row span{
 	font-size: 25px;
 	padding-left: 3px;
 	padding-right: 6px;
@@ -63,23 +66,17 @@ li {
 	border-color: rgb(157,157,157);
 }
 
-.header font + .tooltip > .tooltip-inner {
+.jumbotron .container-fluid .row h4 + .tooltip > .tooltip-inner {
 	background-color: rgb(217,235,207);
 	color:rgb(91,91,91);
 }
 
-#github:hover, #mail:hover, #facebook:hover, #skype:hover, #linkedIn:hover, #about:hover {
-	height: 10%;
-	width: 10%;
-	transform: scale(1.5);
-	/*padding-left: 2%;*/
-
+#github:hover, #mail:hover, #instagram:hover, #skype:hover, #linkedIn:hover, #about:hover {
+	transform: scale(1.8);
 }
-#github, #mail, #facebook, #skype, #linkedIn, #about {
-	height: 10%;
-	width: 10%;
-	/*padding-left: 2%;*/
 
+#github, #mail, #instagram, #skype, #linkedIn, #about {
+	padding-left: 0.2em;
 }
 
 .content {
@@ -94,7 +91,8 @@ margin-top:2%;
 
 }
 
-.well {
+.card {
+	background-color: rgb(244,244,244);
 	margin-top: 5%;
 	font-family: 'Yanone Kaffeesatz';
 	font-size: 18px;
