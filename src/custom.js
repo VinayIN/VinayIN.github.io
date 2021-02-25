@@ -13,7 +13,7 @@ function popAlert(toggle){
 
 $(document).ready(function(){
     $('span[data-toggle="tooltip"]').tooltip({ 
-    	title: "Currrent Designation: Trainee - Data Science",
+    	title: "Data Science Engineer",
     	trigger: "hover"});   
 });
 
