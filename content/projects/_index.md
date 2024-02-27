@@ -1,6 +1,8 @@
 ---
 type: 'blank'
 ---
+### Writings
+
 
 ### Frontend Projects
 

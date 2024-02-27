@@ -1,6 +1,6 @@
 ---
 title: "Links"
-weight: 2
+weight: 3
 ---
 
 - **Resume:** [English](files/Resume-EN.pdf), [German](files/Resume-DE.pdf)

@@ -1,21 +1,21 @@
 ---
-title: "Who am i?"
+title: "Who am i ?"
 weight: 1
 ---
 
 > Masters Student - Artificial Intelligence | Software Engineer - II | Data Science Engineer | Machine Learning Engineer | Python Programmer | Adventurer
 
-Namaste, I'm a Masters Student in Artificial Intelligence at Brandenburgische Technische Universität (BTU) Cottbus-Senftenberg.
+I am a Master's student in Artificial Intelligence at the [Brandenburg University of Technology Cottbus-Senftenberg (BTU)](https://www.b-tu.de/).
 
-I left the professional sphere to pursue my masters because I believe there's more to machine learning than just knowing how to create models and endpoints. Working on projects during my previous employment helped me understand what to look forward to in my career. Now, I am an expat in Cottbus, Germany.
+I transitioned from the professional world to pursue my Master's degree, captivated by the current surge in academic exploration and the opportunity to contribute to the AI revolution. I am a strong advocate for ethical applications of AI and believe in the importance of raising awareness in this crucial field. Currently, I reside in [Cottbus, Germany](https://www.cottbus.de/kultur/index.html), while further enriching my experience as a research assistant at the university.
 
-I primarily use Python for scripting and have some experience with C++, Matlab, and Java. I also participate in hackathons, experiment with new technologies, hike, cycle, and enjoy photography and sketching still objects.
+My primary programming language is Python for scripting. I also possess experience in C++, Matlab, and Java. Additionally, I actively participate in hackathons, explore new technologies, enjoy hiking and cycling, and find calmness in photography and still-life sketching.
 
-Feel free to [reach out](mailto:pradhan.binay.de@gmail.com?cc=bpradhan.asli@gmail.com) anytime if you want to collaborate on any projects.
+Feel free to [reach out](mailto:pradhan.binay.de@gmail.com) anytime if you want to collaborate on any projects.
 
 {{< icon-group >}}
 {{< icon vendor="feather" name="github" link="https://www.github.com/VinayIN" >}}
 {{< icon vendor="feather" name="linkedin" link="https://www.linkedin.com/in/i-binay" >}}
-{{< icon vendor="feather" name="mail" link="pradhan.binay.de@gmail.com" >}}
+{{< icon vendor="feather" name="mail" link="mailto:pradhan.binay.de@gmail.com" >}}
 {{< icon vendor="feather" name="instagram" link="https://www.instagram.com/i_binay" >}}
 {{< /icon-group >}}

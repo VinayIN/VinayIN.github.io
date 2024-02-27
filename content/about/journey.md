@@ -1,6 +1,6 @@
 ---
-title: "Career Journey"
-weight: 3
+title: "Journey"
+weight: 4
 ---
 ##### 2023
 * Started working as a Research Assistant at Brandenburgische Technische Universität (BTU) Cottbus-Senftenberg:
