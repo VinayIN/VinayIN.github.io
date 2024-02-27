@@ -43,7 +43,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5.0.0
         with:
-          go-version: ${GO_VERSION}
+          go-version: '1.21'
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: Checkout
