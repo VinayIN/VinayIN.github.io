@@ -43,16 +43,10 @@ url = "https://wezn.medium.com"
 weight = 2
 
 [[menu.navbar]]
-identifier = "projects"
-name = "projects"
-url = "/projects/"
-weight = 3
-
-[[menu.navbar]]
 identifier = "contact"
 name = "contact"
-url = "/contact/"
-weight = 4
+url = "/contact"
+weight = 3
 
 [[menu.navbar]]
 parent = "contact"
