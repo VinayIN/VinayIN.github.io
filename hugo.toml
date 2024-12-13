@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Binay Pradhan'
 theme = 'github.com/kaiiiz/hugo-theme-monochrome'
 enableEmoji = true
-paginate = 5
+pagination.pagerSize = 5
 enableGitInfo = true
 
 [params]
@@ -11,7 +11,7 @@ navbar_title = "Binay Kumar Pradhan"
 enable_math = true
 enable_zooming_js = true
 author = "Binay Kumar Pradhan"
-footer = "© Some Rights Reserved. Proud supporter of open-source community."
+footer = "Copyright © 2024 Binay Kumar Pradhan"
 
 [goldmark.renderer]
 unsafe= true

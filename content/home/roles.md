@@ -1,5 +1,5 @@
 ---
-title: "Past Lives"
+title: "Career Footprint"
 weight: 2
 ---
 - [Research Assistant, BTU Cottbus-Senftenberg](https://www.b-tu.de/) - Stockyard Management, PassiveBCI

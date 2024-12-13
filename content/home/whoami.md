@@ -1,9 +1,9 @@
 ---
-title: "Who am i ?"
+title: "Who am I ?"
 weight: 1
 ---
 
-> Masters Student - Artificial Intelligence | Software Engineer - II | Data Science Engineer | Machine Learning Engineer | Python Programmer | Adventurer
+> Masters Student - Artificial Intelligence | Software Engineer - II | Data Science Engineer | Machine Learning Engineer | MLOps | Python Developer | Ethical AI 
 
 Namaste, I am a Master's student in Artificial Intelligence at the [Brandenburg University of Technology Cottbus-Senftenberg (BTU)](https://www.b-tu.de/).
 
@@ -11,7 +11,7 @@ I transitioned from the professional world to pursue my Master's degree, captiva
 
 My primary programming language is Python for scripting. I also possess experience in C++, Matlab, and Java. Additionally, I actively participate in hackathons, explore new technologies, enjoy hiking and cycling, and find calmness in photography and still-life sketching.
 
-Feel free to [reach out](mailto:pradhan.binay.de@gmail.com) anytime if you want to collaborate on any projects.
+Feel free to [contact me](mailto:pradhan.binay.de@gmail.com) if I align with the role you’re looking to fill in your team.
 
 {{< icon-group >}}
 {{< icon vendor="feather" name="github" link="https://www.github.com/VinayIN" >}}
