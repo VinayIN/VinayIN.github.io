@@ -4,11 +4,12 @@ weight: 4
 ---
 ##### 2024
 * **January:** Appointed as an Advisor for [ISAC](http://isacottbus-btu.web.app), providing strategic guidance to new team members and contributing to the development of the student body's website.
+* **September:** Started my mandatory internship with Dr. Marius Klug at [BTU Cottbus-Senftenberg](https://www.b-tu.de/en/fg-neuroadaptive-hci), developing a real-time fixation generator and a validation method for neuroscience researchers utilizing [Tobii](https://www.tobii.com/) eyetracker.
 
 ##### 2023
 * Commenced role as a Research Assistant at Brandenburgische Technische Universität (BTU) Cottbus-Senftenberg:
     * **October:** Engaged with the Chair of Neuroadaptive Human-Computer Interaction, Faculty 1.
-    * **June:** Collaborated with the Chair of Programming Language and Compiler Construction, Faculty 1.
+    * **June:** Engaged with the Chair of Programming Language and Compiler Construction, Faculty 1.
 * **February:** Selected as a member of ISAC, representing Indian cultures at BTU Cottbus-Senftenberg.
 
 ##### 2022
