@@ -13,8 +13,10 @@ enable_zooming_js = true
 author = "Binay Kumar Pradhan"
 footer = "Copyright © 2024 Binay Kumar Pradhan"
 
-[goldmark.renderer]
-unsafe= true
+
+[markup.goldmark.renderer]
+unsafe = true
+
 
 [highlight]
 anchorLineNos = false
