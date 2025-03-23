@@ -18,4 +18,5 @@ Feel free to [contact me](mailto:pradhan.binay.de@gmail.com) if I align with the
 {{< icon vendor="feather" name="linkedin" link="https://www.linkedin.com/in/i-binay" >}}
 {{< icon vendor="feather" name="mail" link="mailto:pradhan.binay.de@gmail.com" >}}
 {{< icon vendor="feather" name="instagram" link="https://www.instagram.com/i_binay" >}}
+{{< icon vendor="simple" name="bluesky" link="https://bsky.app/profile/binaypradhan.bsky.social" >}}
 {{< /icon-group >}}
