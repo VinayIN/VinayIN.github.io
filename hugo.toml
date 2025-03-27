@@ -8,10 +8,13 @@ enableGitInfo = true
 
 [params]
 navbar_title = "Binay Kumar Pradhan"
+description = "Binay Kumar Pradhan - Masters Student at BTU Cottbus-Senftenberg, Research Assistant, AI Engineer, Data Scientist, Software Engineer, Machine Learning Expert specializing in MLOps and Deep Learning."
+keywords = ["Binay Kumar Pradhan", "Binay Pradhan", "Binay Kumar", "BTU Cottbus", "Binay Pradhan Masters Student", "Binay Pradhan Linkedin" ]
 enable_math = true
 enable_zooming_js = true
 author = "Binay Kumar Pradhan"
 footer = "Copyright © 2024 Binay Kumar Pradhan"
+enableRobotsTXT = true
 
 
 [markup.goldmark.renderer]
@@ -34,19 +37,19 @@ tabWidth = 4
 
 [[menu.navbar]]
 identifier = "home"
-name = "home"
+name = "Home"
 url = "/"
 weight = 1
 
 [[menu.navbar]]
 identifier = "blog"
-name = "blog"
+name = "Blog"
 url = "https://wezn.medium.com"
 weight = 2
 
 [[menu.navbar]]
 identifier = "contact"
-name = "contact"
+name = "Contact"
 url = "/contact"
 weight = 3
 
