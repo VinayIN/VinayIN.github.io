@@ -1,6 +1,6 @@
 ---
 title: "Journey so far!"
-weight: 4
+weight: 6
 ---
 ##### 2024
 * **January:** Appointed as an Advisor for [ISAC](http://isacottbus-btu.web.app), providing strategic guidance to new team members and contributing to the development of the student body's website.

@@ -1,66 +1,91 @@
-baseURL = 'https://binaypradhan.com'
+baseURL = 'https://binaypradhan.com/'
 languageCode = 'en-us'
 title = 'Binay Pradhan'
-theme = 'github.com/kaiiiz/hugo-theme-monochrome'
+theme = 'github.com/VinayIN/hugo-theme-monochrome'
 enableEmoji = true
-pagination.pagerSize = 5
 enableGitInfo = true
-
-[params]
-navbar_title = "Binay Kumar Pradhan"
-description = "Binay Kumar Pradhan - Masters Student at BTU Cottbus-Senftenberg, Research Assistant, AI Engineer, Data Scientist, Software Engineer, Machine Learning Expert specializing in MLOps and Deep Learning."
-keywords = ["Binay Kumar Pradhan", "Binay Pradhan", "Binay Kumar", "BTU Cottbus", "Binay Pradhan Masters Student", "Binay Pradhan Linkedin" ]
-enable_math = true
-enable_zooming_js = true
-author = "Binay Kumar Pradhan"
-footer = "Copyright © 2024 Binay Kumar Pradhan"
 enableRobotsTXT = true
 
+[params]
+    author = "Binay Kumar Pradhan"
+    navbar_title = "Binay Kumar Pradhan"
+    description = "Binay Kumar Pradhan - Masters Student at BTU Cottbus-Senftenberg, Research Assistant, AI Engineer, Data Scientist, Software Engineer, Machine Learning Expert specializing in MLOps and Deep Learning."
+    keywords = ["Binay Kumar Pradhan", "Binay Pradhan", "Binay Kumar", "BTU Cottbus", "Binay Pradhan Masters Student", "Binay Pradhan Linkedin"]
+    enable_math = true
+    enable_zooming_js = true
+    footer = "Copyright © 2024 Binay Kumar Pradhan"
 
-[markup.goldmark.renderer]
-unsafe = true
+[pagination]
+    pagerSize = 5
 
+[security]
+    enableInlineShortcodes = true
 
-[highlight]
-anchorLineNos = false
-codeFences = false
-guessSyntax = false
-hl_Lines = ""
-lineAnchors = ""
-lineNoStart = 1
-lineNos = false
-lineNumbersInTable = true
-noHl = false
-noClasses = true
-style = "monokai"
-tabWidth = 4
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
 
-[[menu.navbar]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 1
+    [markup.highlight]
+        anchorLineNos = false
+        codeFences = true
+        guessSyntax = false
+        lineAnchors = ""
+        lineNoStart = 1
+        lineNos = false
+        lineNumbersInTable = true
+        noHl = false
+        noClasses = true
+        style = "monokai"
+        tabWidth = 4
 
-[[menu.navbar]]
-identifier = "blog"
-name = "Blog"
-url = "https://wezn.medium.com"
-weight = 2
-
-[[menu.navbar]]
-identifier = "contact"
-name = "Contact"
-url = "/contact"
-weight = 3
 
 [[menu.navbar]]
-parent = "contact"
-identifier = "Github"
-name = "Github"
-url = "https://www.github.com/VinayIN"
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
 
 [[menu.navbar]]
-parent = "contact"
-identifier = "LinkedIn"
-name = "LinkedIn"
-url = "https://www.linkedin.com/in/i-binay"
+    identifier = "blog"
+    name = "Blog"
+    url = "https://wezn.medium.com"
+    weight = 2
+
+[[menu.navbar]]
+    identifier = "contact"
+    name = "Contact"
+    url = "#"
+    weight = 3
+
+[[menu.navbar]]
+    identifier = "download"
+    name = "Downloads"
+    url = "#"
+    weight = 4
+
+[[menu.navbar]]
+    parent = "contact"
+    identifier = "Github"
+    name = "Github"
+    url = "https://www.github.com/VinayIN"
+
+[[menu.navbar]]
+    parent = "contact"
+    identifier = "LinkedIn"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/i-binay"
+
+[[menu.navbar]]
+    parent = "download"
+    identifier = "Resume-EN"
+    name = "Resume (English)"
+    url = "https://binaypradhan.com/files/Resume-EN.pdf"
+    weight = 1
+
+[[menu.navbar]]
+    parent = "download"
+    identifier = "Resume-DE"
+    name = "Resume (German)"
+    url = "https://binaypradhan.com/files/Resume-DE.pdf"
+    weight = 2
