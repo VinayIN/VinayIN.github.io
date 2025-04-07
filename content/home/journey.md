@@ -2,6 +2,9 @@
 title: "Journey so far!"
 weight: 6
 ---
+##### 2025
+* **April:** Joined a workshop through [Eunice Entrepreneurship Lab 2025](https://eunice-university.eu/course/entrepreneurship-lab-2025/) to enable me to start thinking strategically in career.
+
 ##### 2024
 * **January:** Appointed as an Advisor for [ISAC](http://isacottbus-btu.web.app), providing strategic guidance to new team members and contributing to the development of the student body's website.
 * **September:** Started my mandatory internship with Dr. Marius Klug at [BTU Cottbus-Senftenberg](https://www.b-tu.de/en/fg-neuroadaptive-hci), developing a real-time fixation generator and a validation method for neuroscience researchers utilizing [Tobii](https://www.tobii.com/) eyetracker.
