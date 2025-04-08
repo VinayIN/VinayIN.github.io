@@ -13,12 +13,12 @@ My primary programming language for scripting is Python. I also possess experien
 
 When I'm not geeking out over ML, I go out for hiking and bike around the city, I find motivation around nature. My next big adventure is trek to Zugspitze!
 
-Feel free to [contact me](mailto:pradhan.binay.de@gmail.com) if I align with the role you’re looking to fill in your team or If you find my open-source projects helpful, please consider [buying me a coffee](https://www.buymeacoffee.com/i_binay)!
+Feel free to [contact me](mailto:binaypradhan@duck.com) if I align with the role you’re looking to fill in your team or If you find my open-source projects helpful, please consider [buying me a coffee](https://www.buymeacoffee.com/i_binay)!
 
 {{< icon-group >}}
 {{< icon vendor="feather" name="github" link="https://www.github.com/VinayIN" >}}
 {{< icon vendor="feather" name="linkedin" link="https://www.linkedin.com/in/i-binay" >}}
-{{< icon vendor="feather" name="mail" link="mailto:pradhan.binay.de@gmail.com" >}}
+{{< icon vendor="feather" name="mail" link="mailto:binaypradhan@duck.com" >}}
 {{< icon vendor="feather" name="instagram" link="https://www.instagram.com/i_binay" >}}
 {{< icon vendor="simple" name="bluesky" link="https://bsky.app/profile/binaypradhan.bsky.social" >}}
 {{< /icon-group >}}
