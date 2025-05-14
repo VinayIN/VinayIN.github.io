@@ -1,7 +1,9 @@
 ---
 title: "Journey so far!"
-weight: 6
----
+collapse: true
+weight: 7
+--- 
+
 ##### 2025
 * **April:** Joined a workshop through [Eunice Entrepreneurship Lab 2025](https://eunice-university.eu/course/entrepreneurship-lab-2025/) to enable me to start thinking strategically in career.
 
@@ -31,4 +33,3 @@ weight: 6
 
 ##### 2015
 * **August:** Began Bachelor's studies in Information Technology at [IIIT Bhubaneswar](https://www.iiit-bh.ac.in/).
-
