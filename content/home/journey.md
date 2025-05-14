@@ -1,15 +1,16 @@
 ---
 title: "Journey so far!"
 collapse: true
-weight: 7
+weight: 3
 --- 
 
 ##### 2025
-* **April:** Joined a workshop through [Eunice Entrepreneurship Lab 2025](https://eunice-university.eu/course/entrepreneurship-lab-2025/) to enable me to start thinking strategically in career.
+* **May:** Became a part of AI For Good as a [Regional Lead for the Cottbus Hub](https://aiforgood.itu.int/speaker/binay-pradhan/). `AI for Good` is organized by ITU in partnership with over 40 UN Sister Agencies and co-convened with the Government of Switzerland.
+* **April:** Took part in the [Eunice Entrepreneurship Lab 2025](https://eunice-university.eu/course/entrepreneurship-lab-2025/), a workshop aimed at cultivating entrepreneurial expertise and initiating the process of registering a company within the European Union.
 
 ##### 2024
-* **January:** Appointed as an Advisor for [ISAC](http://isacottbus-btu.web.app), providing strategic guidance to new team members and contributing to the development of the student body's website.
-* **September:** Started my mandatory internship with Dr. Marius Klug at [BTU Cottbus-Senftenberg](https://www.b-tu.de/en/fg-neuroadaptive-hci), developing a real-time fixation generator and a validation method for neuroscience researchers utilizing [Tobii](https://www.tobii.com/) eyetracker.
+* **January:** Appointed as an Advisor for [ISAC](http://isacottbus-btu.web.app) to provide strategic guidance to new team members and contribute to the development of the student body at the IRO of BTU Cottbus-Senftenberg.
+* **September:** Started my mandatory internship with Dr. Marius Klug at [BTU Cottbus-Senftenberg](https://www.b-tu.de/en/fg-neuroadaptive-hci), developing a real-time fixation generator and a validation method for neuroscience researchers utilizing [Tobii](https://www.tobii.com/) eyetracker. The finished toolbox can be found under the section of `Open source - Projects`
 
 ##### 2023
 * Commenced role as a Research Assistant at Brandenburgische Technische Universität (BTU) Cottbus-Senftenberg:

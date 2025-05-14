@@ -1,6 +1,6 @@
 ---
 title: "Off the Grid"
-weight: 6
+weight: 7
 ---
 
 When I'm not geeking about machine learning, you'll likely find me exploring trails or biking through the serenity of nature. My next big adventure? Hiking the Tatra Mountains in Slovakia/Poland! 
