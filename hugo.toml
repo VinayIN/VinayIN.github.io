@@ -13,7 +13,7 @@ enableRobotsTXT = true
     keywords = ["Binay Kumar Pradhan", "Binay Pradhan", "Binay Kumar", "BTU Cottbus", "Binay Pradhan Masters Student", "Binay Pradhan Linkedin"]
     enable_math = true
     enable_zooming_js = true
-    footer = "Copyright © 2024 Binay Kumar Pradhan"
+    footer = "Copyright © 2025 Binay Kumar Pradhan"
 
 [pagination]
     pagerSize = 5
