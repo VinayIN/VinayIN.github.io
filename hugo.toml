@@ -6,86 +6,166 @@ enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
 
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+changefreq = "monthly"
+filename = "sitemap.xml"
+priority = 0.5
+
 [params]
-    author = "Binay Kumar Pradhan"
-    navbar_title = "Binay Kumar Pradhan"
-    description = "Binay Kumar Pradhan - Masters Student at BTU Cottbus-Senftenberg, Research Assistant, AI Engineer, Data Scientist, Software Engineer, Machine Learning Expert specializing in MLOps and Deep Learning."
-    keywords = ["Binay Kumar Pradhan", "Binay Pradhan", "Binay Kumar", "BTU Cottbus", "Binay Pradhan Masters Student", "Binay Pradhan Linkedin"]
-    enable_math = true
-    enable_zooming_js = true
-    footer = "Copyright © 2025 Binay Kumar Pradhan"
+author = "Binay Kumar Pradhan"
+navbar_title = "Binay Kumar Pradhan"
+description = "Binay Kumar Pradhan - Masters Student at BTU Cottbus-Senftenberg, Research Assistant, AI Engineer, Data Scientist, Software Engineer, Machine Learning Expert specializing in MLOps and Deep Learning."
+keywords = [
+    "Binay Kumar Pradhan",
+    "Binay Pradhan",
+    "Binay Kumar",
+    "BTU Cottbus",
+    "Binay Pradhan Masters Student",
+    "Binay Pradhan Linkedin",
+]
+enable_math = true
+enable_zooming_js = true
+footer = "Copyright © 2025 Binay Kumar Pradhan"
+
+# SEO Features
+enable_open_graph = true
+enable_twitter_cards = false
+
+# Site Features
+enable_header_anchor = true
+
+# List Layout
+[params.list_layout]
+enable_group_by_year = true
+enable_show_date = true
+enable_pagination = true
+
+# Enhanced Syntax Highlighting
+[params.syntax_highlight]
+lib = "prism.js"
+[params.syntax_highlight.prism]
+enable_code_copy = true
+enable_line_no = true
+
+[params.seo_person]
+name = "Binay Kumar Pradhan"
+url = "https://binaypradhan.com/"
+image = "https://binaypradhan.com/light-head.png"
+jobTitle = "Machine Learning Engineer"
+description = "Machine Learning Engineer / AI Engineer specializing in ML system design, ASR, model compression, and reinforcement learning. Building end-to-end ML systems in Python and Rust with PyTorch and AWS SageMaker."
+email = "binaypradhan@duck.com"
+addressLocality = "Cottbus"
+addressCountry = "DE"
+alumniOf = "Brandenburg University of Technology Cottbus–Senftenberg"
+worksFor = "BTU Cottbus–Senftenberg"
+hasCredential = "M.Sc. Artificial Intelligence"
+affiliation = ["BTU Cottbus–Senftenberg", "AI for Good (Cottbus Hub)"]
+knowsAbout = [
+    "ML System Design",
+    "MLOps",
+    "ASR",
+    "Speech Recognition",
+    "Model Compression",
+    "Pruning",
+    "Quantization",
+    "Knowledge Distillation",
+    "Reinforcement Learning",
+    "DQN",
+    "PyTorch",
+    "TorchAudio",
+    "Supabase",
+    "Serverless",
+    "CI/CD",
+    "Observability",
+    "Python",
+    "Rust",
+    "Artificial Intelligence",
+    "Deep Learning",
+    "Machine Learning",
+    "Data Science",
+]
+sameAs = [
+    "https://www.linkedin.com/in/i-binay",
+    "https://github.com/VinayIN",
+    "https://bsky.app/profile/binaypradhan.bsky.social",
+    "https://binaypradhan.com",
+    "https://aiforgood.itu.int/speaker/binay-pradhan/",
+]
 
 [pagination]
-    pagerSize = 5
+pagerSize = 5
 
 [security]
-    enableInlineShortcodes = true
+enableInlineShortcodes = true
 
 [markup]
-    [markup.goldmark]
-        [markup.goldmark.renderer]
-            unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
-    [markup.highlight]
-        anchorLineNos = false
-        codeFences = true
-        guessSyntax = false
-        lineAnchors = ""
-        lineNoStart = 1
-        lineNos = false
-        lineNumbersInTable = true
-        noHl = false
-        noClasses = true
-        style = "monokai"
-        tabWidth = 4
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+lineAnchors = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noHl = false
+noClasses = true
+style = "monokai"
+tabWidth = 4
 
-
-[[menu.navbar]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
 
 [[menu.navbar]]
-    identifier = "blog"
-    name = "Blog"
-    url = "https://wezn.medium.com"
-    weight = 2
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
 
 [[menu.navbar]]
-    identifier = "contact"
-    name = "Contact"
-    url = "#"
-    weight = 3
+identifier = "blog"
+name = "Blog"
+url = "https://wezn.medium.com"
+weight = 2
 
 [[menu.navbar]]
-    identifier = "download"
-    name = "Downloads"
-    url = "#"
-    weight = 4
+identifier = "contact"
+name = "Contact"
+url = "#"
+weight = 3
 
 [[menu.navbar]]
-    parent = "contact"
-    identifier = "Github"
-    name = "Github"
-    url = "https://www.github.com/VinayIN"
+identifier = "download"
+name = "Downloads"
+url = "#"
+weight = 4
 
 [[menu.navbar]]
-    parent = "contact"
-    identifier = "LinkedIn"
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/i-binay"
+parent = "contact"
+identifier = "Github"
+name = "Github"
+url = "https://www.github.com/VinayIN"
 
 [[menu.navbar]]
-    parent = "download"
-    identifier = "Resume-EN"
-    name = "Resume (English)"
-    url = "https://binaypradhan.com/files/Resume-EN.pdf"
-    weight = 1
+parent = "contact"
+identifier = "LinkedIn"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/i-binay"
 
 [[menu.navbar]]
-    parent = "download"
-    identifier = "Resume-DE"
-    name = "Resume (German)"
-    url = "https://binaypradhan.com/files/Resume-DE.pdf"
-    weight = 2
+parent = "download"
+identifier = "Resume-EN"
+name = "Resume (English)"
+url = "https://binaypradhan.com/files/Resume-EN.pdf"
+weight = 1
+
+[[menu.navbar]]
+parent = "download"
+identifier = "Resume-DE"
+name = "Resume (German)"
+url = "https://binaypradhan.com/files/Resume-DE.pdf"
+weight = 2

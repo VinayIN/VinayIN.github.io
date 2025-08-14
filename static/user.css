@@ -1,0 +1,78 @@
+/* Site-specific styles for VinayIN.github.io */
+/* Journey table styling for timeline/chronological tables */
+
+/* Column widths for 4-column timeline format */
+.journey-table thead th:first-child,
+.timeline-table thead th:first-child,
+.collapsible-content table thead th:first-child {
+  width: 8%;
+  text-align: center;
+}
+
+.journey-table thead th:nth-child(2),
+.timeline-table thead th:nth-child(2),
+.collapsible-content table thead th:nth-child(2) {
+  width: 10%;
+  text-align: center;
+}
+
+.journey-table thead th:nth-child(3),
+.timeline-table thead th:nth-child(3),
+.collapsible-content table thead th:nth-child(3) {
+  width: 32%;
+}
+
+.journey-table thead th:nth-child(4),
+.timeline-table thead th:nth-child(4),
+.collapsible-content table thead th:nth-child(4) {
+  width: 50%;
+}
+
+/* Remove internal borders for cleaner look */
+.journey-table tbody td,
+.timeline-table tbody td,
+.collapsible-content table tbody td {
+  border-right: none;
+}
+
+/* Year/identifier column */
+.journey-table tbody td:first-child,
+.timeline-table tbody td:first-child,
+.collapsible-content table tbody td:first-child {
+  text-align: center;
+  font-weight: 600;
+  background-color: var(--color-background-overlay);
+}
+
+/* Style for non-empty year cells */
+.journey-table tbody td:first-child:not(:empty),
+.timeline-table tbody td:first-child:not(:empty),
+.collapsible-content table tbody td:first-child:not(:empty) {
+  color: var(--color-navbar-item-active);
+  font-weight: 700;
+  border-top: 2px solid var(--color-navbar-item-active);
+  padding-top: 1rem;
+}
+
+/* Month/date column */
+.journey-table tbody td:nth-child(2),
+.timeline-table tbody td:nth-child(2),
+.collapsible-content table tbody td:nth-child(2) {
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+/* Title/role column */
+.journey-table tbody td:nth-child(3),
+.timeline-table tbody td:nth-child(3),
+.collapsible-content table tbody td:nth-child(3) {
+  font-weight: 500;
+}
+
+/* Description column */
+.journey-table tbody td:nth-child(4),
+.timeline-table tbody td:nth-child(4),
+.collapsible-content table tbody td:nth-child(4) {
+  color: var(--color-text-secondary);
+}

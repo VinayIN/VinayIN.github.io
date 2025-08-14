@@ -2,7 +2,9 @@
 title: "Career Footprint"
 weight: 2
 ---
-- [Research Assistant, BTU Cottbus-Senftenberg](https://www.b-tu.de/) - Stockyard Management, PassiveBCI
-- [AI Data Engineer, Fasal co](https://fasal.co/) - Agrotech, ELT Data pipeline
-- [Software Engineer II, Myelin Foundry](https://www.myelinfoundry.com/) - AutomotiveAI, Hand Gesture and Emotion Recognition
-- [Data Science Engineer, Utopia India Pvt Ltd](https://www.utopiainc.com/) - SAP, NLP toolkit, Master Data Management
+<div id="career-footprint"></div>
+
+- [Research Assistant, BTU Cottbus–Senftenberg](https://www.b-tu.de/) — PassiveBCI, PyQt6, ASR, EEG/eye-tracking, pyETA-toolbox, Constraint Programming
+- [AI Data Engineer II, Fasal](https://fasal.co/) — MLOps (AWS SageMaker), AWS Lambda optimization, ETL pipeline, observability, structured logging
+- [Software Engineer II, Myelin Foundry](https://www.myelinfoundry.com/) — Edge AI (Android), MediaPipe, TFLite quantization, YOLOv5, gesture/emotion recognition, AutomotiveAI
+- [Data Science Engineer, Utopia (Prometheus Group)](https://www.utopiainc.com/) — NLP/data cleansing, Gaussian Models, REST APIs, CI/CD (Jenkins), SAP, Master Data Management
