@@ -60,6 +60,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugomod-
 
+      - name: Generate Git Info
+        run: |
+          mkdir -p data
+          git --no-pager log -1 --date=iso8601 --pretty=format:'{"commit": "%H", "short_commit": "%h", "date": "%ai", "author": "%an", "subject": "%s"}' -- content/home > data/git_info.json
+          echo "Generated git info:"
+          cat data/git_info.json
+
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
