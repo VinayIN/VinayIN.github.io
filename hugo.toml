@@ -37,6 +37,7 @@ enable_twitter_cards = false
 # Site Features
 enable_header_anchor = true
 
+
 # List Layout
 [params.list_layout]
 enable_group_by_year = true
