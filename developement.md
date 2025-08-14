@@ -13,6 +13,8 @@
 
 ## Local Development
 
+uncomment the `replace` directive in go.mod
+
 When developing locally and you want to test the git info system:
 
 ```bash
