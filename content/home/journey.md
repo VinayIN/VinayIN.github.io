@@ -15,7 +15,7 @@ keywords: ["Binay Pradhan career", "ML engineer journey", "BTU Cottbus", "AI res
 | **2024** | Sep | Research Internship - Chair of Neuroadaptive Human-Computer Interaction, [BTU Cottbus-Senftenberg](https://www.b-tu.de/en/fg-neuroadaptive-hci) | Taught computers to track eyeballs professionally and made some pretty looking dashboards. |
 |  | Jan | Advisor, [ISAC](http://isacottbus-btu.web.app) | Became the wise sage on behalf of Indian Community, who answers "When is the next cultural event?" |
 | **2023** | Jun | Research Assistant - Chair of Programming Language and Compiler Construction, [BTU Cottbus-Senftenberg](https://www.b-tu.de/en/programmiersprachen-und-compilerbau) | Learnt the efficiency of constraint programming and application of reinforcement learning can create magic |
-|  | Feb | Member, ISAC | Discovered organizing events is harder than training neural networks. Who knew? |
+|  | Feb | Member, [ISAC](http://isacottbus-btu.web.app) | Discovered organizing events is harder than training neural networks. Who knew? |
 | **2022** | Oct | M.Sc. Artificial Intelligence, [BTU Cottbus–Senftenberg](https://www.b-tu.de/en/artificial-intelligence-ms) | Currently learning to speak fluent AI language, and sometime Deutsch |
 |  | Jun | AI Data Engineer II, [Fasal](https://fasal.co/) | Built ETL pipelines so robust they survived my Monday morning debugging sessions. |
 | **2021** | Oct | Software Engineer II, [Myelin Foundry](https://www.myelinfoundry.com/) | Taught Automobiles to read emotions (achievements unlocked). |

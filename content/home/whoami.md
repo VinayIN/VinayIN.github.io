@@ -12,7 +12,7 @@ I transitioned from the professional world to pursue my Master's degree, captiva
 
 My expertise and interests lies on `system desiging`, `speech recognition (ASR) models`, `model compression` *(pruning and quantization)* and using `reinforcement learning` approches for operations optimization. My primary programming language for scripting is Python, but I also use Rust to gain performance during system designing activity. And, when I find time or need an inspiration I participate in Hackathons.
 
-tldr;
+tl;dr
 > System Design | ASR Model | Model Compression| Deep Reinforcement Learning | Python/Rust | Ethical AI
 
 If I align with your needs, feel free to [contact me](mailto:binaypradhan@duck.com), and If my open-source projects help you, consider [buying me a coffee](https://www.buymeacoffee.com/i_binay).
