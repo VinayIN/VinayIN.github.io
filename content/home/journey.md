@@ -20,8 +20,8 @@ keywords: ["Binay Pradhan career", "ML Engineer", "BTU Cottbus", "AI Researcher"
 |  | Jun | AI Data Engineer II, [Fasal](https://fasal.co/) | Built ETL pipelines so robust they survived my Monday morning debugging sessions. |
 | **2021** | Oct | Software Engineer II, [Myelin Foundry](https://www.myelinfoundry.com/) | Taught Automobiles to read emotions (achievements unlocked). |
 | **2019** | Aug | B.Tech Undergrad, [IIIT Bhubaneswar](https://www.iiit-bh.ac.in/) | Graduated with a degree in B.Tech in Information Technology, A Milestone |
-|  | Jul | Data Science Engineer, [Utopia India (Prometheus Group)](https://www.utopiainc.com/) | Learnt the hard way that developing a machine learning product for information-extraction takes patience. |
-|  | Jan | Machine Learning Intern, [Utopia India (Prometheus Group)](https://www.utopiainc.com/) | First application of academic learning into corporate. |
+|  | Jul | Data Science Engineer, [Utopia India (Prometheus Group)](https://www.prometheusgroup.com/) | Learnt the hard way that developing a machine learning product for information-extraction takes patience. |
+|  | Jan | Machine Learning Intern, [Utopia India (Prometheus Group)](https://www.prometheusgroup.com/) | First application of academic learning into corporate. |
 | **2018** | May | Research Intern, [IDRBT](https://www.idrbt.ac.in/) | Proved with a PhD graduate that mixing languages (Hindi+Bengali+Code) creates beautiful publications material. |
 | **2015** | Aug | The Beginning, [IIIT Bhubaneswar](https://www.iiit-bh.ac.in/) | Started my journey into `from sklearn.linear_model import LogisticRegression` |
 
