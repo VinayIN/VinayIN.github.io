@@ -17,13 +17,14 @@ priority = 0.5
 [params]
 author = "Binay Kumar Pradhan"
 navbar_title = "Binay Kumar Pradhan"
-description = "Binay Kumar Pradhan - Masters Student at BTU Cottbus-Senftenberg, Research Assistant, AI Engineer, Data Scientist, Software Engineer, Machine Learning Expert specializing in MLOps and Deep Learning."
+description = "Binay Kumar Pradhan - Masters Student at BTU Cottbus-Senftenberg, Germany. He has taken roles as Machine Learning Engineer, AI Engineer, Data Scientist, Software Engineer and Research Assistant. Binay Kumar Pradhan specializes in system design, ASR models, model compression and reinforcement learning"
 keywords = [
     "Binay Kumar Pradhan",
     "Binay Pradhan",
     "Binay Kumar",
     "BTU Cottbus",
-    "Binay Pradhan Masters Student",
+    "BTU Cottbus-Sentenberg",
+    "Binay Pradhan Artificial Intelligence",
     "Binay Pradhan Linkedin",
 ]
 enable_math = true
