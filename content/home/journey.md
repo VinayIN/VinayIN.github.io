@@ -1,8 +1,8 @@
 ---
 title: "Journey so far!"
 weight: 3
-description: "Professional journey of Binay Kumar Pradhan - from B.Tech at IIIT Bhubaneswar to M.Sc AI at BTU Cottbus, through roles at Utopia India, Myelin Foundry, Fasal, and current research at BTU."
-keywords: ["Binay Pradhan career", "ML engineer journey", "BTU Cottbus", "AI research", "machine learning career"]
+description: "Professional journey of Binay Kumar Pradhan - from B.Tech at IIIT Bhubaneswar to M.Sc AI at BTU Cottbus, through roles at Utopia India, Myelin Foundry, Fasal, and as a research assistant at BTU Cottbus-Senftenberg Germany."
+keywords: ["Binay Pradhan career", "ML Engineer", "BTU Cottbus", "AI Researcher", "machine learning", "Data Scientist"]
 ---
 <div id="journey"></div>
 

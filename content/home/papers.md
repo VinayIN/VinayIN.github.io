@@ -1,5 +1,6 @@
 ---
 title: "Papers"
+description: "Binay Kumar Pradhan, published paper Code-mixed POS Tagging in ACM Trans. Asian Low-Resour. Lang."
 weight: 6
 ---
 <div id="papers"></div>

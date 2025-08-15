@@ -1,5 +1,6 @@
 ---
 title: "Open source - Projects"
+description: "Binay Kumar Pradhan, opensource libraried with pypi pyETA-toolbox, pylogger-slack"
 weight: 5
 ---
 <div id="opensource-projects"></div>

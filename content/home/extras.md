@@ -1,5 +1,6 @@
 ---
 title: "Off the Grid"
+description: "Binay Kumar Pradhan, a machine learning expert and avid hiker. Western Ghats India, Himalayas, Black Forest, Mount Etna"
 weight: 7
 ---
 

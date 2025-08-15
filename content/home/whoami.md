@@ -1,16 +1,17 @@
 ---
 title: "Who am I ?"
+description: "Binay Kumar Pradhan, Masters student in Artificial Intelligence at BTU Cottbus-Senftenberg, Germany. He is a Machine Learning Engineer, AI Researcher, Data Scientist, with expertise on system design, ASR models, model compression and reinforcement learning"
 weight: 1
 ---
 <div id="about-me"></div>
 
-> Machine Learning Engineer | AI Engineer | Data Scientist | AI Research Engineer
+> Machine Learning Engineer | AI Engineer | Data Scientist | AI Researcher
 
 Namaste, I am a Master's student in Artificial Intelligence at the [Brandenburg University of Technology Cottbus-Senftenberg (BTU)](https://www.b-tu.de/).
 
 I transitioned from the professional world to pursue my Master's degree, captivated by the current surge in academia and the opportunity to contribute to the AI revolution. I am a strong advocate for [ethical applications of AI](https://www.iso.org/artificial-intelligence/responsible-ai-ethics) and believe in its positive implications to society. Currently, I reside in [Cottbus, Germany](https://www.cottbus.de/kultur/index.html), and working on my masters thesis.
 
-My expertise and interests lies on `system desiging`, `speech recognition (ASR) models`, `model compression` *(pruning and quantization)* and using `reinforcement learning` approches for operations optimization. My primary programming language for scripting is Python, but I also use Rust to gain performance during system designing activity. And, when I find time or need an inspiration I participate in Hackathons.
+My expertise and interests include `system design`, `speech recognition models (ASR)`, `model compression` *(pruning and quantization)*, and the application of `reinforcement learning` approaches for operations optimization. My primary programming language is `Python`, complemented by the use of `Rust` to enhance performance in system design. Additionally, I actively participate in hackathons to further develop my skills and stay engaged with the latest advancements in the field.
 
 tl;dr
 > System Design | ASR Model | Model Compression| Deep Reinforcement Learning | Python/Rust | Ethical AI
