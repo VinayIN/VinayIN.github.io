@@ -141,12 +141,6 @@ url = "#"
 weight = 3
 
 [[menu.navbar]]
-identifier = "download"
-name = "Downloads"
-url = "#"
-weight = 4
-
-[[menu.navbar]]
 parent = "contact"
 identifier = "Github"
 name = "Github"
@@ -157,17 +151,3 @@ parent = "contact"
 identifier = "LinkedIn"
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/i-binay"
-
-[[menu.navbar]]
-parent = "download"
-identifier = "Resume-EN"
-name = "Resume (English)"
-url = "https://binaypradhan.com/files/Resume-EN.pdf"
-weight = 1
-
-[[menu.navbar]]
-parent = "download"
-identifier = "Resume-DE"
-name = "Resume (German)"
-url = "https://binaypradhan.com/files/Resume-DE.pdf"
-weight = 2
