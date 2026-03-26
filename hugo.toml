@@ -163,10 +163,10 @@ weight = 4
 parent = "download"
 identifier = "Resume (English)"
 name = "Resume (English)"
-url = "/files/Resume-EN.pdf"
+url = "/files/resume-en.pdf"
 
 [[menu.navbar]]
 parent = "download"
 identifier = "Resume (German)"
 name = "Resume (German)"
-url = "/files/Resume-DE.pdf"
+url = "/files/resume-de.pdf"
