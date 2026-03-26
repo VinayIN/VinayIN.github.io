@@ -62,8 +62,9 @@ jobs:
 
       - name: Generate Git Info
         run: |
+          # Generate git info for the latest commit in the repository
           mkdir -p data
-          git --no-pager log -1 --date=iso8601 --pretty=format:'{"commit": "%H", "short_commit": "%h", "date": "%ai", "author": "%an", "subject": "%s"}' -- content/home > data/git_info.json
+          git --no-pager log -1 --date=iso8601 --pretty=format:'{"commit": "%H", "short_commit": "%h", "date": "%ai", "author": "%an", "subject": "%s"}' > data/git_info.json
           echo "Generated git info:"
           cat data/git_info.json
 
