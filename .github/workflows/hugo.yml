@@ -31,6 +31,10 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
@@ -42,27 +46,8 @@ jobs:
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
-      - name: Verify resume files are present in the build input
-        run: |
-          test -f static/files/resume-en.pdf
-          test -f static/files/resume-de.pdf
-          echo "Resume files found:"
-          ls -l static/files/resume-en.pdf static/files/resume-de.pdf
-
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-
-      - name: Cache Hugo modules
-        uses: actions/cache@v4
-        with:
-          path: ${{ runner.temp }}/hugo_cache
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
 
       - name: Generate Git Info
         run: |
@@ -78,13 +63,7 @@ jobs:
           HUGO_ENV: production
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
         run: |
-          echo "Pages base URL: ${{ steps.pages.outputs.base_url }}"
-          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}"
-          echo "Expected resume URLs:"
-          echo "${{ steps.pages.outputs.base_url }}/files/resume-en.pdf"
-          echo "${{ steps.pages.outputs.base_url }}/files/resume-de.pdf"
-          echo "Built resume files:"
-          ls -l public/files/resume-en.pdf public/files/resume-de.pdf
+          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -100,4 +79,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/configure-pages@v5
+        uses: actions/deploy-pages@v4
