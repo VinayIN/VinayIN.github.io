@@ -78,12 +78,13 @@ jobs:
           HUGO_ENV: production
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
         run: |
+          echo "Pages base URL: ${{ steps.pages.outputs.base_url }}"
           hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}"
-          echo "Built files:"
-          ls -l public/files || true
-          echo "Checking generated resume URLs:"
-          test -f public/files/resume-en.pdf
-          test -f public/files/resume-de.pdf
+          echo "Expected resume URLs:"
+          echo "${{ steps.pages.outputs.base_url }}/files/resume-en.pdf"
+          echo "${{ steps.pages.outputs.base_url }}/files/resume-de.pdf"
+          echo "Built resume files:"
+          ls -l public/files/resume-en.pdf public/files/resume-de.pdf
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
