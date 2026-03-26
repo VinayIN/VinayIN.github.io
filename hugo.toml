@@ -5,9 +5,10 @@ theme = 'github.com/VinayIN/hugo-theme-monochrome'
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
+disableKinds = ["RSS"]
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "JSON"]
 
 [sitemap]
 changefreq = "monthly"
@@ -151,3 +152,21 @@ parent = "contact"
 identifier = "LinkedIn"
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/i-binay"
+
+[[menu.navbar]]
+identifier = "download"
+name = "Download"
+url = "#"
+weight = 4
+
+[[menu.navbar]]
+parent = "download"
+identifier = "Resume (English)"
+name = "Resume (English)"
+url = "/files/Resume-EN.pdf"
+
+[[menu.navbar]]
+parent = "download"
+identifier = "Resume (German)"
+name = "Resume (German)"
+url = "/files/Resume-DE.pdf"
