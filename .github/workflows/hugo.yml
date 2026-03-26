@@ -46,6 +46,13 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Verify resume files are present in the build input
+        run: |
+          test -f static/files/resume-en.pdf
+          test -f static/files/resume-de.pdf
+          echo "Resume files found:"
+          ls -l static/files/resume-en.pdf static/files/resume-de.pdf
+
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
@@ -71,7 +78,12 @@ jobs:
           HUGO_ENV: production
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
         run: |
-          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}"
+          echo "Built files:"
+          ls -l public/files || true
+          echo "Checking generated resume URLs:"
+          test -f public/files/resume-en.pdf
+          test -f public/files/resume-de.pdf
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
