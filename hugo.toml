@@ -1,16 +1,13 @@
 baseURL = 'https://vinayin.github.io/'
-canonifyURLs = true
-relativeURLs = false
-languageCode = 'en-us'
+locale = "en"
 title = 'Binay Pradhan'
 theme = 'github.com/VinayIN/hugo-theme-monochrome'
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
-disableKinds = ["RSS"]
 
 [outputs]
-home = ["HTML", "JSON"]
+home = ["HTML", "RSS", "JSON"]
 
 [sitemap]
 changefreq = "monthly"
@@ -18,7 +15,6 @@ filename = "sitemap.xml"
 priority = 0.5
 
 [params]
-author = "Binay Kumar Pradhan"
 navbar_title = "Binay Kumar Pradhan"
 description = "Binay Kumar Pradhan - Masters Student at BTU Cottbus-Senftenberg, Germany. He has taken roles as Machine Learning Engineer, AI Engineer, Data Scientist, Software Engineer and Research Assistant. Binay Kumar Pradhan specializes in system design, ASR models, model compression and reinforcement learning"
 keywords = [
@@ -33,13 +29,23 @@ keywords = [
 enable_math = true
 enable_zooming_js = true
 footer = "Copyright © 2026 Binay Kumar Pradhan"
+hide_navbar_on_scroll = true
+color_scheme = "light"
+enable_toc = true
+enable_site_search = false
+enable_header_anchor = true
+enable_collapsible_toc = false
+enable_collapsible_changelogs = true
+toc_position = "right"
+navbar_show_all_languages = true
+navbar_width = "wide"
+
+[params.author]
+name = "Binay Kumar Pradhan"
 
 # SEO Features
 enable_open_graph = true
 enable_twitter_cards = false
-
-# Site Features
-enable_header_anchor = true
 
 # List Layout
 [params.list_layout]
@@ -50,6 +56,7 @@ enable_pagination = true
 # Enhanced Syntax Highlighting
 [params.syntax_highlight]
 lib = "prism.js"
+
 [params.syntax_highlight.prism]
 enable_code_copy = true
 enable_line_no = true
@@ -98,12 +105,6 @@ sameAs = [
     "https://vinayin.github.io/",
     "https://aiforgood.itu.int/speaker/binay-pradhan/",
 ]
-
-[pagination]
-pagerSize = 5
-
-[security]
-enableInlineShortcodes = true
 
 [markup]
 [markup.goldmark]
