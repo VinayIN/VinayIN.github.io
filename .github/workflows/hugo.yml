@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.159.1
+      HUGO_VERSION: 0.162.1
       GO_VERSION: 1.26.1
     steps:
       - name: Checkout
@@ -51,10 +51,8 @@ jobs:
 
       - name: Generate Git Info
         run: |
-          # Generate git info for the latest commit in the repository
-          mkdir -p data
-          git --no-pager log -1 --date=iso8601 --pretty=format:'{"commit": "%H", "short_commit": "%h", "date": "%ai", "author": "%an", "subject": "%s"}' > data/git_info.json
-          echo "Generated git info:"
+          bash update-git-info.sh
+          echo "Generated data:"
           cat data/git_info.json
 
       - name: Build with Hugo
