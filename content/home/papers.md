@@ -1,11 +1,8 @@
 ---
 title: "Papers"
-description: "Binay Kumar Pradhan, published paper Code-mixed POS Tagging in ACM Trans. Asian Low-Resour. Lang."
+description: "Binay Kumar Pradhan, published paper"
 weight: 6
 ---
-<div id="papers"></div>
 
-- S. Nagesh Bhattu, Satya Krishna Nunna, D. V. L. N. Somayajulu, and Binay Pradhan. 2020. Improving Code-mixed POS Tagging Using Code-mixed Embeddings. ACM Trans. Asian Low-Resour. Lang. Inf. Process. 19, 4, Article 50 (July 2020), 31 pages. https://doi.org/10.1145/3380967
-
-
-{{< icon vendor="simple" name="orcid" link="https://orcid.org/0000-0002-6318-3241" >}}
+- Bhattu, S. N., Nunna, S. K., Somayajulu, D. V., & Pradhan, B. (2020). Improving code-mixed POS tagging using code-mixed embeddings. ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP), 19(4), 1–31.
+{{< icon vendor="simple" name="acm" link="https://doi.org/10.1145/3380967" >}}

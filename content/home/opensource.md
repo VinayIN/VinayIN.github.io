@@ -3,15 +3,8 @@ title: "Open source - Projects"
 description: "Binay Kumar Pradhan, opensource libraried with pypi pyETA-toolbox, pylogger-slack"
 weight: 5
 ---
-<div id="opensource-projects"></div>
 
-**Support my development**
-
-<p style="width: 164px">
-    <a href="https://www.buymeacoffee.com/i_binay" target="_blank"><img src="buymecoffee.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 164px !important; pointer-events: none;"></a>
-</p>
-
-- **pyETA-toolbox (PyPI)**: Real-time eye-tracker streaming and fixation detection toolkit for research *(Peer-reviewed publication forthcoming)*
+- **pyETA-toolbox (PyPI)**: Real-time eye-tracker streaming and fixation detection toolkit for a PhD graduate
   > A LSL streaming for eye tracker device with real-time fixation detection (I-DT/I-VT style), live plots, and device validation reports for reproducible studies in the field of neuroscience and BCI. Find the pypi package here at https://pypi.org/project/pyETA-toolbox/
 
 - **pylogger-slack (PyPI)**: Structured logging with Slack notifications
