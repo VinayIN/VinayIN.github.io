@@ -1,8 +1,10 @@
 ---
 title: "Open source - Projects"
-description: "Binay Kumar Pradhan, opensource libraried with pypi pyETA-toolbox, pylogger-slack"
+description: "Binay Kumar Pradhan, opensource, pypi pyETA-toolbox, pylogger-slack, cite-cli"
 weight: 5
 ---
+
+- **cite-cli (Github)**: A TUI tool for managing and generating podcast style content enriched with formatted citations. Ideal for researchers, educators, journalists and developers who want to reproducible quality knowledge base directly from the terminal. Currently a personal project, open for collaboration, check at https://github.com/VinayIN/cite-cli
 
 - **pyETA-toolbox (PyPI)**: Real-time eye-tracker streaming and fixation detection toolkit for a PhD graduate
   > A LSL streaming for eye tracker device with real-time fixation detection (I-DT/I-VT style), live plots, and device validation reports for reproducible studies in the field of neuroscience and BCI. Find the pypi package here at https://pypi.org/project/pyETA-toolbox/
